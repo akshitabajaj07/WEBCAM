@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" >
+        <title>MY WEBCAM</title>
+        <link rel="stylesheet" href="scripts.css">
+    </head>
+    <body>
+   <div class="photobooth">
+      <div class="controls">
+        <button onclick="takePhoto()">Take Photo</button>
+        <div class="rgb">
+         <label for="rmin">Red Min:</label>
+         <input type="range" name="rmin" min="0" max="255">
+         <label for="rmax">Red Max:</label>
+         <input type="range" name="rmax" min="0" max="255">
+
+         <br>
+
+         <label for="gmin">Green Min:</label>
+         <input type="range" name="gmin" min="0" max="255">
+         <label for="gmax">Green Max:</label>
+         <input type="range" name="gmax" min="0" max="255">
+
+         <br>
+
+         <label for="bmin">Blue Min:</label>
+         <input type="range" name="bmin" min="0" max="255">
+         <label for="bmax">Blue Max:</label>
+         <input type="range" name="bmax" min="0" max="255">
+
+        </div>
+     </div>
+      <canvas class="photo"> </canvas>
+      <video class="player"></video>
+      <div class="strip"></div>
+    </div>
+      <audio class="snap" src="https://www.fesliyanstudios.com/play-mp3/1649" hidden></audio>
+      <script src="scripts.js"></script>
+    </body>
+</html>
